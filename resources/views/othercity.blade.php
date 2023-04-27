@@ -26,19 +26,21 @@
 
                     </div>
 
-                    <div class="grid grid-cols-1 p-4 min_height round_border relative">
+                    <div class="flex flex-col w-full min_height mx-auto p-4 round_border relative">
                         <div class="grid mx-auto">
                             <div id="qrcode"></div>
-                            <b class="mx-auto" style="margin-top: -45px;">Upload Data</b>
                         </div>
-                        <div id="track">
+                        <div class="grid mx-auto pt-4">
+                            <b>Upload Data</b>
+                        </div>
+                        <div class="grid mt-8" id="track">
                             <span>Счётчик</span>
 
                             <div x-data="{ count: 0 }">
                                 <h1 id="count"></h1>
                             </div>
                         </div>
-                        <div class="absolute w-full bottom-0 p-4">
+                        <div class="absolute w-full bottom-0 p-4" style="padding-right: 40px;">
                             <form method="POST" action="{{ route('almatyout-product') }}" id="searchForm">
                                 <div>
                                     <div>
